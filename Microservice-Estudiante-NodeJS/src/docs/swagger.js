@@ -1,6 +1,9 @@
 const swaggerJsdoc = require('swagger-jsdoc');
 const path = require('path');
 
+// En Windows path.join usa "\", pero swagger-jsdoc necesita "/" para encontrar los archivos.
+const rutasDocumentadas = path.join(__dirname, '../routes/*.js').replace(/\\/g, '/');
+
 module.exports = swaggerJsdoc({
   definition: {
     openapi: '3.0.0',
@@ -11,5 +14,5 @@ module.exports = swaggerJsdoc({
     },
     servers: [{ url: 'http://localhost:3003' }],
   },
-  apis: [path.join(__dirname, '../routes/*.js')],
+  apis: [rutasDocumentadas],
 });
