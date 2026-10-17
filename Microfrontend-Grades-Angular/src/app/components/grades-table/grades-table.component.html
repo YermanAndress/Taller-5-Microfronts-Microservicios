@@ -1,0 +1,27 @@
+<table class="table table-striped border">
+	<thead>
+		<tr>
+			<th scope="col">Id</th>
+			<th scope="col">Grado</th>
+			<th scope="col">Director de Grupo</th>
+			<th scope="col">N° Estudiantes</th>
+			<th scope="col">Jornada</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (grade of grades; track grade) {
+			<tr>
+				<th scope="row">{{ grade.id }}</th>
+				<td>{{ grade.name }}</td>
+				<td>{{ grade.director }}</td>
+				<td>{{ grade.studentsCount }}</td>
+				<td>
+					<dsb-badge-atom
+						[text]="grade.jornada"
+						[type]="jornadaMap[grade.jornada]" >
+                    </dsb-badge-atom>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

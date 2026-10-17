@@ -22,16 +22,24 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 - Ubícate en la raíz del proyecto de Client-Host-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microfrontend-Users-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microfrontend-Products-Angular y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Microfrontend-Grades-Angular y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Microfrontend-Subjects-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Users-NodeJS y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Products-NodeJS y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Microservice-Grades-NodeJS y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Microservice-Subjects-NodeJS y ejecuta el comando: ```npm i```
 
 
 ### 2️⃣ Ejecutar los Proyectos
 
 - Ubícate en la raíz del proyecto de Microservice-Users-NodeJS y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microservice-Products-NodeJS y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Microservice-Grades-NodeJS y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Microservice-Subjects-NodeJS y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microfrontend-Users-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microfrontend-Products-Angular y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Microfrontend-Grades-Angular y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Microfrontend-Subjects-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Client-Host-Angular y ejecuta el comando: ```npm run start```
 
 
@@ -47,6 +55,16 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 - Swagger API Docs: ```http://localhost:3002/api/docs```
 - API Products: ```http://localhost:3002/api/users/{countProducts}```
 
+#### Microservice-Grades-NodeJS
+- Corriendo en: ```http://localhost:3003```
+- Swagger API Docs: ```http://localhost:3003/api/docs```
+- API Grades: ```http://localhost:3003/api/grades/{countGrades}```
+
+#### Microservice-Subjects-NodeJS
+- Corriendo en: ```http://localhost:3004```
+- Swagger API Docs: ```http://localhost:3004/api/docs```
+- API Subjects: ```http://localhost:3004/api/subjects/{countSubjects}```
+
 #### Microfrontend-Users-Angular
 - Corriendo en: ```http://localhost:4201```
 - RemoteEntry: ```http://localhost:4201/remoteEntry.js```
@@ -54,6 +72,14 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 #### Microfrontend-Products-Angular
 - Corriendo en: ```http://localhost:4202```
 - RemoteEntry: ```http://localhost:4202/remoteEntry.js```
+
+#### Microfrontend-Grades-Angular
+- Corriendo en: ```http://localhost:4203```
+- RemoteEntry: ```http://localhost:4203/remoteEntry.js```
+
+#### Microfrontend-Subjects-Angular
+- Corriendo en: ```http://localhost:4204```
+- RemoteEntry: ```http://localhost:4204/remoteEntry.js```
 
 #### Client-Host-Angular
 - Corriendo en: ```http://localhost:4200```

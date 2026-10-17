@@ -1,0 +1,29 @@
+{
+  "name": "microservice-estudiante-nodejs",
+  "version": "1.0.0",
+  "description": "Microservicio de estudiantes (Node.js + Express + Faker.js + Swagger)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": ["src/**/*.js", "!src/server.js"],
+    "coverageThreshold": {
+      "global": { "branches": 90, "functions": 90, "lines": 90, "statements": 90 }
+    }
+  }
+}

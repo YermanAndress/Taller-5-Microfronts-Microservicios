@@ -1,0 +1,15 @@
+@switch(state){
+
+    @case('loading'){
+        <app-alert alertState="loading" text="Cargando Grados..." ></app-alert>
+    }
+
+    @case('error'){
+        <app-alert alertState="error" text="Error al Cargar los Grados" ></app-alert>
+    }
+
+    @case('success'){
+        <app-grades-table [grades]="grades" ></app-grades-table>
+    }
+
+}

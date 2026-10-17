@@ -1,0 +1,27 @@
+<table class="table table-striped border">
+	<thead>
+		<tr>
+			<th scope="col">Id</th>
+			<th scope="col">Materia</th>
+			<th scope="col">Docente</th>
+			<th scope="col">Créditos</th>
+			<th scope="col">Área</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (subject of subjects; track subject) {
+			<tr>
+				<th scope="row">{{ subject.id }}</th>
+				<td>{{ subject.name }}</td>
+				<td>{{ subject.teacher }}</td>
+				<td>{{ subject.credits }}</td>
+				<td>
+					<dsb-badge-atom
+						[text]="subject.area"
+						[type]="areaMap[subject.area]" >
+                    </dsb-badge-atom>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

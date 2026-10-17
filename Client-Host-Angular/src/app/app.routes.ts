@@ -15,6 +15,8 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
  *
  * @see {@link UsersPage}
  * @see {@link ProductsPage}
+ * @see {@link GradesPage}
+ * @see {@link SubjectsPage}
  */
 export const routes: Routes = [
 
@@ -49,6 +51,40 @@ export const routes: Routes = [
                 remoteEntry: 'http://localhost:4202/remoteEntry.js',
                 exposedModule: './ProductsPage',
         }).then(m => m.ProductsPage),
+    },
+
+  /**
+   * Ruta de grados.
+   *
+   * @remarks
+   * Renderiza el componente `GradesPage`, encargado
+   * de mostrar y gestionar el listado de grados.
+   */
+    {
+        path: 'grades',
+        loadComponent: () =>
+            loadRemoteModule({
+                type: 'module',
+                remoteEntry: 'http://localhost:4203/remoteEntry.js',
+                exposedModule: './GradesPage',
+        }).then(m => m.GradesPage),
+    },
+
+  /**
+   * Ruta de materias.
+   *
+   * @remarks
+   * Renderiza el componente `SubjectsPage`, encargado
+   * de mostrar y gestionar el listado de materias.
+   */
+    {
+        path: 'subjects',
+        loadComponent: () =>
+            loadRemoteModule({
+                type: 'module',
+                remoteEntry: 'http://localhost:4204/remoteEntry.js',
+                exposedModule: './SubjectsPage',
+        }).then(m => m.SubjectsPage),
     },
 
   /**
